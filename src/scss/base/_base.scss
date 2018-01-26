@@ -1,0 +1,29 @@
+// default spacing removal
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 12px;
+
+    @media (min-width: 800px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+//default paragraph size
+p {
+    font-family: $text-font-stack;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 25px;
+    line-height: 150%;
+}
+
+a {
+  color: $dark-grey;
+  text-decoration: none;
+}

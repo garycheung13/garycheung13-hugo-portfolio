@@ -1,0 +1,86 @@
+.homepage-section {
+    padding: 5% 10% 5% 10%;
+    hr {
+        display: block;
+        background-color: $vivid-red;
+        max-width: 100px;
+        height: 5px;
+        margin: 2.5% auto;
+        border: none;
+        border-radius: 10px;
+    }
+    h3 {
+        font-family: $text-font-stack;
+        font-weight: 700;
+        font-size: 3rem;
+        color: $dark-grey;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h4 {
+        font-size: 1.375em;
+        padding-bottom: 15px;
+    }
+    p {
+        font-weight: 300;
+        line-height: 165%;
+    }
+}
+
+.homepage-section__subheading {
+    font-family: $text-font-stack;
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.homepage-content {
+    padding-top: 50px;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: $text-font-stack;
+}
+
+.homepage-content__section-50 {
+    width: 45%;
+    @media screen and (max-width: $break-medium) {
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+#about {
+    background-color: $light-grey;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    img {
+        max-width: 100px;
+        max-height: auto;
+        display: block;
+        margin: auto;
+        padding-bottom: 25px;
+    }
+
+    ul {
+        font-family: $text-font-stack;
+        font-weight: 300;
+        padding-left: 50px;
+    }
+
+    p, li {
+        font-size: 1.125rem;
+    }
+
+    li {
+        padding-bottom: 10px;
+    }
+
+    @media screen and (max-width: $break-large) {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

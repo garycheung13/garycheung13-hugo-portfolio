@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="the development and ux design portfolio of Gary Cheung">
+    <!-- typekit fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/utn1tqw.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "main.css" }}" />
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    <nav class="nav" id="homepage-nav">
+        <span id="mobile-nav">Menu</span>
+        <ul id="nav-options" class="nav-hidden">
+            <li><a href="/">Gary Cheung</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="/documents/gc_resume.pdf">Resume (PDF)</a></li>
+        </ul>
+    </nav>
+    <header class="splash">
+        <div class="splash-text">
+            <h1>Hello, My name is <span>Gary</span></h1>
+            <p>
+                I am an <span>UX Specialist and Web Developer</span> that uses research driven methods to design and build websites.
+            </p>
+            <p>
+                I am currrently seeking fulltime opportunities.
+            </p>
+            <button>
+                <a href="/documents/gc_resume.pdf">
+                    See My Resume
+                </a>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section id="portfolio" class="homepage-section">
+            <h3>Portfolio</h3>
+            <hr>
+            <div class="gallery">
+            <!-- project cards -->
+            {{ range .Data.Pages }}
+                {{ if eq .Type "projects" }}
+                    {{ partial "card.html" . }}
+                {{ end }}
+            {{ end }}
+            </div>
+        </section>
+        <section id="about" class="homepage-section">
+            <h3>About Me</h3>
+            <hr>
+            <img src="/images/profile_temp2-min.png" alt="profile picture">
+            <p>
+                Hi, my name is Gary. I am a currently a web developer and a graduate student in Information Science, specializing in Human-Computer Interaction, at the University of Michigan.
+            </p>
+            <p>
+                I was initially a latecomer to the world of tech, having learnt to code right after finishing my undergraduate degree. Over the course of my time away from school, my background in psychology led to become curious about the human facing side of software development. This lead me to return to school in order to learn to bring human-centered principles into development.
+            </p>
+            <p>
+                Over the course of my two years in the program I learned:
+                <ul>
+                    <li>practical user-centered research methods such as conducting interviews, usability tests, contextual inquiry</li>
+                    <li>designed and developed data visualization programs that tell meaningful narratives</li>
+                    <li>ideated, designed, and prototyped interfaces for new apps</li>
+                    <li>collected and manipulated data from the web to further project goals</li>
+                </ul>
+            </p>
+            <p>
+                I am graduating in April 2018 and currently seeking fulltime opportunities in UI and web development. Feel free to contact me at gcheung@<span style="display: none;">null</span>umich.edu
+            </p>
+        </section>
+        <section id="skills" class="homepage-section">
+            <h3>Skillset</h3>
+            <hr>
+            <span class="homepage-section__subheading">I bring both design research and development skills</span>
+            <div class="homepage-content">
+                <div class="homepage-content__section-50 list">
+                    <h4>Web Development</h4>
+                    <h5>Languages</h5>
+                    <ul>
+                        <li>Python, Javascript(ES6), HTML5/CSS3, PHP, MySQL</li>
+                    </ul>
+                    <h5>Libraries/Frameworks</h5>
+                    <ul>
+                        <li>React.js, D3.js, Express/Node.js, Drupal, Wordpress</li>
+                    </ul>
+                    <h5>Tools</h5>
+                    <ul>
+                        <li>Gulp, Webpack, Git/Github</li>
+                    </ul>
+                </div>
+                <div class="homepage-content__section-50 list">
+                    <h4>User Experience</h4>
+                    <h5>Methodology</h5>
+                    <ul>
+                        <li>Usability Testing, User Interviews, Survey Design, Iterative Prototyping, Persona Creation</li>
+                    </ul>
+
+                    <h5>Software Used</h5>
+                    <ul>
+                        <li>Sketch, Illustrator, Photoshop, Invision, SPSS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        {{ partial "footer.html" }}
+    </main>
+    <!-- library for smooth scroll effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+    <!-- navbar script -->
+    <script src="/js/{{ index .Site.Data.js.hash "navbar.js" }}"></script>
+</body>
+
+</html>

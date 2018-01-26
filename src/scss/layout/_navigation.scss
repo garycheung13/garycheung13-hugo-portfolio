@@ -1,0 +1,74 @@
+.nav {
+    position: fixed;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    transition: padding-top 500ms, background-color 100ms;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        padding-left: 75px;
+        padding-right: 75px;
+        display: inline-block;
+    }
+
+    a {
+        font-family: $text-font-stack;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: white;
+        border-top: 0.5px solid $light-grey;
+        border-bottom: 0.5px solid $light-grey;
+
+        #mobile-nav {
+            display: block;
+            cursor: pointer;
+        }
+
+        li {
+            display: block;
+            padding: 15px;
+
+            &:hover {
+                background-color: $light-grey;
+            }
+        }
+    }
+}
+
+.nav-scrolling {
+    padding-top: 20px;
+    background-color: white;
+    border-bottom: 0.5px solid $light-grey;
+}
+
+#mobile-nav {
+    display: block;
+    text-align: right;
+    font-family: $text-font-stack;
+    font-size: 1.2rem;
+    padding-right: 25px;
+}
+
+//hides the nav on smaller screens so that the collapsible nav can be used
+@media screen and (max-width: $break-medium) {
+    .nav-hidden {
+        display: none;
+    }
+}

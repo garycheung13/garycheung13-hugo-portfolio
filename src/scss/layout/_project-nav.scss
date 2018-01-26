@@ -1,0 +1,72 @@
+.project-nav-container {
+    padding: 10% 12.5% 5% 12.5%;
+
+    h2, h3, a {
+        font-family: $text-font-stack;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    a {
+        display: block;
+        font-size: 1.375rem;
+        color: $muted-red;
+    }
+
+    hr {
+        display: block;
+        background-color: $vivid-red;
+        max-width: 1300px;
+        height: 4px;
+        margin: 1.5% auto;
+        border: none;
+        border-radius: 10px;
+    }
+
+}
+.project-navigator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-navigator__block {
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $break-medium) {
+        width: 100%;
+    }
+}
+
+.nav-direction-link {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.project-nav-homelink {
+    display: block;
+    margin: auto;
+    border: 1px solid $vivid-red;
+    padding: 10px 20px 10px 20px;
+
+    @media screen and (min-width: $break-medium) {
+        &:hover {
+            background-color: $vivid-red;
+            color: white;
+        }
+    }
+}
+
+.nav-text {
+    padding-left: 100px;
+
+    @media screen and (max-width: $break-medium) {
+        padding-left: 0;
+    }
+}

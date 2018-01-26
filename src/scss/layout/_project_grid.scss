@@ -1,0 +1,88 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media screen and (max-width: $break-medium) {
+        justify-content: center;
+    }
+}
+
+.gallery-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 38vw;
+    float: left;
+    flex: 0 0 auto;
+    height: 22.5vw;
+    margin-bottom: 4%;
+    position: relative;
+    transition: box-shadow .3s;
+
+    // only do hover effects on larger screens
+    @media screen and (min-width: $break-medium) {
+        &:hover {
+            box-shadow: 0 0 11px rgba(33,33,33,.5);
+            cursor: pointer;
+        }
+
+        &:hover > .gallery-item__text {
+            height: 160px;
+        }
+
+        &:hover > .cover {
+            opacity: 0.5;
+        }
+    }
+
+    @media screen and (max-width: $break-medium) {
+        width: 78vw;
+        height: 45vw;
+    }
+
+}
+
+.gallery-item__text {
+    position: absolute;
+    padding-left: 20px;
+    max-width: 75%;
+    color: white;
+    overflow-y: hidden;
+    bottom: 0;
+    height: 75px;
+    transition: height .3s;
+
+    h1 {
+        font-family: $text-font-stack;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+
+    ul {
+        font-family: $text-font-stack;
+        font-weight: 300;
+        font-size: 0.9rem;
+        list-style-type: none;
+        padding-bottom: 20px;
+    }
+
+    li {
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    @media screen and (max-width: $break-medium) {
+        height: 60px;
+    }
+}
+
+.cover {
+    opacity: 0.0;
+    height: inherit;
+    width: inherit;
+    transition: opacity .3s ease;
+}

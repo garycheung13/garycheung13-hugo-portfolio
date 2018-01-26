@@ -1,0 +1,25 @@
+<div class="project-nav-container">
+    <h2>Other Projects</h2>
+    <hr>
+    <div class="project-navigator">
+        <div class="project-navigator__block">
+        {{ if .NextInSection }}
+            <div class="nav-text">
+                <a class="nav-direction-link" href="{{ .NextInSection.URL }}"> &Lang; Previous project</a>
+                <h3>{{ .NextInSection.Params.title }}</h3>
+                <p>{{ .NextInSection.Params.tagline }}</p>
+            </div>
+        {{ end }}
+        </div>
+        <div class="project-navigator__block">
+        {{ if .PrevInSection }}
+            <div class="nav-text">
+                <a class="nav-direction-link" href="{{ .PrevInSection.URL }}">Next project &Rang; </a>
+                <h3>{{ .PrevInSection.Params.title }}</h3>
+                <p>{{ .PrevInSection.Params.tagline }}</p>
+            </div>
+        {{ end }}
+        </div>
+        <a class="project-nav-homelink" href="{{ .Site.BaseURL }}">Back to Portfolio</a>
+    </div>
+</div>

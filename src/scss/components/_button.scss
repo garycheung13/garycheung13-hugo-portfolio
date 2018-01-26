@@ -1,0 +1,23 @@
+button {
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    outline: none;
+    border-color: $vivid-red;
+    background-color: white;
+    color: $vivid-red;
+    font-family: $text-font-stack;
+    font-weight: 700;
+    font-size: 1.1rem;
+
+    &:hover {
+        background-color: $vivid-red;
+    }
+
+    &:hover > a {
+        color: white;
+    }
+}
+
+button a {
+    color: $vivid-red;
+}

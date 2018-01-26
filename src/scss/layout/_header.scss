@@ -1,0 +1,44 @@
+.splash {
+    padding-left: 10%;
+    padding-right: 10%;
+    background: url("/images/homepage_curve.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    height: 100vh;
+
+    @media screen and (max-width: $break-medium) {
+        height: 50vh;
+        background: none;
+    }
+}
+
+.splash-text {
+    position: relative;
+    top: 20%;
+
+    h1 {
+        font-family: $header-font-stack;
+        color: $dark-grey;
+        font-size: 2.9rem;
+        padding-bottom: 50px;
+    }
+
+    p {
+        font-size: 1.25rem;
+        max-width: 55%;
+
+        @media screen and (max-width: $break-medium) {
+            max-width: 100%;
+        }
+    }
+
+    span {
+        color: $vivid-red;
+        font-weight: 700;
+    }
+
+    button {
+        transform: translateY(50px);
+    }
+}

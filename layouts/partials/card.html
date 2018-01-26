@@ -1,0 +1,14 @@
+<a href="{{ .RelPermalink }}">
+<div class="gallery-item" style="background-image: linear-gradient(to bottom, transparent, {{ .Params.gradient }}), url({{ .Params.card }})">
+        <div class="cover" style="background-color: {{ .Params.gradient }}"></div>
+    <div class="gallery-item__text">
+        <h1> {{ .Title }} </h1>
+        <ul>
+            {{ range .Params.roles }}
+                <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+            <p>{{ .Params.tagline }}</p>
+    </div>
+</div>
+</a>

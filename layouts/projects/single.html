@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- typekit fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/utn1tqw.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "main.css" }}" />
+    <title>{{ .Title }}</title>
+</head>
+
+<body>
+    <header class="project-header" id="project-header">
+        <div class="project-header__text">
+            <a href="{{ .Site.BaseURL }}" class="project-backlink">Back to Portfolio</a>
+            <h1>{{ .Title }}</h1>
+            <p class="project-header__tagline">{{ .Params.tagline }}</p>
+            <p class="project-header__duration"><strong>Duration:</strong> {{ .Params.duration }}</p>
+            <ul>
+                {{ range .Params.roles }}
+                    <li class="type-tag">{{ . }}</li>
+                {{ end }}
+            </ul>
+        </div>
+        <img src="{{ .Params.headerImage }}" alt="">
+    </header>
+
+    <main class="flex-grid project-content">
+        {{ if .Params.toc }}
+             <!-- main text area -->
+            <div class="col-three-responsive project_content__main">
+                <!-- hugo content begins here -->
+                <div class="primary">{{ .Content }}</div>
+            </div>
+            {{ partial "table-of-contents.html" . }}
+        {{ else }}
+            <div class="col-four project_content__main">
+                <!-- hugo content begins here -->
+                <div class="primary">{{ .Content }}</div>
+            </div>
+        {{ end }}
+    </main>
+    {{partial "project_nav.html" . }}
+    {{partial "footer.html"}}
+    {{/* scripts are only needed with its case study */}}
+    {{ if .Params.toc }}
+        <!-- library for smooth scroll effect -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+        <!-- scrollspy script -->
+        <script src="/js/{{ index .Site.Data.js.hash "project.js" }}"></script>
+    {{ end }}
+</body>
+
+</html>

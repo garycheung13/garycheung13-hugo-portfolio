@@ -1,0 +1,20 @@
+//headline 1
+$header-font-stack: 'museo-slab', serif !default;
+
+//subhead
+$text-font-stack: 'museo-sans', sans-serif !default;
+
+//colors
+$dark-grey: rgb(54, 54, 54) !default;
+$muted-grey: rgb(71, 71, 71) !default;
+$vivid-red: rgb(232, 23, 93) !default;
+$muted-red: rgb(204, 82, 122) !default;
+$vivid-blue: rgb(21, 188, 217) !default;
+$muted-blue: rgb(20, 121, 140) !default;
+$light-grey: rgb(239, 239, 239) !default;
+
+
+//breakpoints
+$break-small: 320px;
+$break-medium: 980px;
+$break-large: 1690px;

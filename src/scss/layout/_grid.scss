@@ -1,0 +1,27 @@
+.flex-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-one {
+    width: 25%;
+}
+
+.col-two {
+    width: 50%;
+}
+
+.col-three {
+    width: 75%;
+}
+
+.col-three-responsive {
+    width: 75%;
+    @media screen and (max-width: $break-medium) {
+        width: 100%;
+    }
+}
+
+.col-four {
+    width: 100%;
+}

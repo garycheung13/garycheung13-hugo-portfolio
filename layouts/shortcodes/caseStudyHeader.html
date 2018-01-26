@@ -1,0 +1,4 @@
+{{ $header := .Inner }}
+{{ $anchorId := ($header | plainify | htmlEscape | urlize) }}
+
+<h3 class="toc-header" id="{{ $anchorId }}"> {{ $header }} </h3>
