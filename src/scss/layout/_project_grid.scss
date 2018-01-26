@@ -31,6 +31,10 @@
 
         &:hover > .gallery-item__text {
             height: 160px;
+
+            p {
+                display: block;
+            }
         }
 
         &:hover > .cover {
@@ -52,14 +56,14 @@
     color: white;
     overflow-y: hidden;
     bottom: 0;
-    height: 75px;
+    height: 100px;
     transition: height .3s;
 
     h1 {
         font-family: $text-font-stack;
         font-weight: 700;
         text-transform: uppercase;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
     }
 
     ul {
@@ -76,7 +80,11 @@
     }
 
     @media screen and (max-width: $break-medium) {
-        height: 60px;
+        height: 100px;
+    }
+
+    p {
+        display: none;
     }
 }
 

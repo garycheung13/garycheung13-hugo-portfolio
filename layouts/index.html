@@ -16,7 +16,7 @@
     <nav class="nav" id="homepage-nav">
         <span id="mobile-nav">Menu</span>
         <ul id="nav-options" class="nav-hidden">
-            <li><a href="/">Gary Cheung</a></li>
+            <li><a href="{{ .Site.BaseURL }}">Gary Cheung</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -115,6 +115,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
     <!-- navbar script -->
     <script src="/js/{{ index .Site.Data.js.hash "navbar.js" }}"></script>
+    {{partial "google-analytics.html"}}
 </body>
 
 </html>

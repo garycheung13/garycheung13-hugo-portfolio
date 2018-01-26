@@ -16,7 +16,7 @@ weight: 1
 
 #### Summary
 
-This project was completed on behalf of our client, EMX Systems, a healthcare startup developing a medical record exchange system that aggregates patient records from separate electronic medical record(EMR) systems to provide doctors with faster and more complete information about their patients. I worked a UX researcher and designer on a team of five to assess the needs of medical professionals and design the frontend using our research findings.
+This project was completed on behalf of our client, EMX Systems, a healthcare startup developing a medical record exchange system that aggregates patient records from separate electronic medical record(EMR) systems to provide doctors with faster and more complete information about their patients. I worked as a UX researcher and designer on a team of five to assess the needs of medical professionals and design the frontend interface using our research findings.
 
 #### Background
 

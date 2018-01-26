@@ -5,13 +5,13 @@
 }
 
 html {
-    font-size: 12px;
+    font-size: 14px;
 
     @media (min-width: 800px) {
-      font-size: 14px;
+      font-size: 16px;
     }
     @media (min-width: 1200px) {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 //default paragraph size

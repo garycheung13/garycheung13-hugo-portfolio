@@ -5,10 +5,10 @@
     background-repeat: no-repeat;
     background-position: top right;
     background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
 
     @media screen and (max-width: $break-medium) {
-        height: 50vh;
         background: none;
     }
 }

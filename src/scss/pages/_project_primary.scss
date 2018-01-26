@@ -51,6 +51,15 @@
         width: 100%;
         height: auto;
     }
+    @media screen and (max-width: $break-medium) {
+        h4 {
+            font-size: 1.375rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+        }
+    }
 }
 
 .project-content__main {
@@ -71,6 +80,11 @@
     li > h4 {
         padding-bottom: 5px;
     }
+
+    @media screen and (max-width: $break-medium) {
+        width: 90%;
+        padding-left: 5%;
+    }
 }
 
 .active {
@@ -89,6 +103,10 @@
     color: $vivid-red;
     font-weight: 500;
     font-size: 1.375rem;
+
+    @media screen and (max-width: $break-medium) {
+        font-size: 1.5rem;
+    }
 }
 
 .section {
