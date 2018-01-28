@@ -26,6 +26,8 @@ The team working the MCommunity platform has began work on a new beta platform a
 
 Our first research deliverable was an interaction map, where we mapped out interaction flows of the main functions (person lookup & contact information editing) of the current beta release of the MCommunity platform.
 
+{{< figure src="/images/project-images/mcomm-map.jpg" title="The digital version of our affinity map, used to group our interview data." >}}
+
 {{% caseStudyHeader %}} User Interviews {{% /caseStudyHeader %}}
 
 With the help of our client, we conducted five interviews with five MCommunity users with different roles in the university, such as students and administrators to learn more about MCommunity’s user needs.
@@ -43,11 +45,13 @@ Based on these interviews, we made three key findings.
 
 #### Personas
 
-{{< figure src="https://via.placeholder.com/800x500" title="Affinity Map" >}}
+{{< figure src="/images/project-images/mcomm-personas.png" title="Our personas for MCommunity, based on our interviews." >}}
 
 {{% caseStudyHeader %}} Comparative Analysis {{% /caseStudyHeader %}}
 
 We conducted a comparative analysis where we looked at several products to look for possible features which could solve the user needs we learned about from our interviews.
+
+{{< figure src="/images/project-images/mcomm-matrix.png" title="The digital version of our affinity map, used to group our interview data." >}}
 
 
 {{% caseStudyHeader %}} Surveys {{% /caseStudyHeader %}}

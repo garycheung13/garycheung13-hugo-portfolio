@@ -43,8 +43,10 @@
     }
 
     @media screen and (max-width: $break-medium) {
-        width: 78vw;
-        height: 45vw;
+        width: 85vw;
+        height: 50vw;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
 }

@@ -12,6 +12,7 @@
 
     //hide the header
     @media screen and (max-width: $break-medium) {
+        height: 100vh;
         img {
             display: none;
         }
