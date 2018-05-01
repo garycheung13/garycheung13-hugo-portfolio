@@ -5,7 +5,7 @@ draft: false
 roles: ["Frontend Dev", "Data Visualization"]
 duration: "1 Month"
 tagline: "Visualizing the effect of herd immunity."
-weight: 3
+weight: 2
 card: "images/herd_card.png"
 headerImage: "/images/herd_macbook.png"
 gradient: "#D86E8B"
@@ -18,6 +18,14 @@ I developed this explorable explanation project over the course of a month for m
 
 {{< figure src="/images/project-images/herd.png">}}
 
+
+
+## Project Links
+---
 {{< projectLink src="http://www.ceegary.com/herd_immunity" >}}
     View Live Site
+{{< /projectLink >}}
+
+{{< projectLink src="https://github.com/garycheung13/herd_immunity" >}}
+    Source Code
 {{< /projectLink >}}

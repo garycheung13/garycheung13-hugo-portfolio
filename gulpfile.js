@@ -11,7 +11,7 @@ gulp.task("scss", function () {
     del(["static/css/**/*"])
 
     //compile hashed css files
-    gulp.src("src/scss/**/*.scss")
+    gulp.src("src/scss/main.scss")
         .pipe(sass({
             outputStyle: "compressed"
         }))

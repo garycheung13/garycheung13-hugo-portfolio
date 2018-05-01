@@ -5,7 +5,7 @@ draft: false
 roles: ["UX Research"]
 duration: "4 Months"
 tagline: "Researching improvements for U-M's people directory"
-weight: 4
+weight: 6
 card: "images/mcomm-card.png"
 headerImage: "/images/mcomm_macbook.png"
 gradient: "#39C0B8"

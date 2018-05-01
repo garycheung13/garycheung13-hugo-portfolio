@@ -26,6 +26,14 @@ We did so using the following process.
 
 {{< figure src="/images/project-images/moma-2.png" title="Baubaus movement geographic and work classification breakdown">}}
 
+
+
+## Project Links
+---
 {{< projectLink src="http://ceegary.com/moma_and_art_movements/" >}}
     View Live Site
+{{< /projectLink >}}
+
+{{< projectLink src="https://github.com/garycheung13/moma_and_art_movements" >}}
+    Source Code
 {{< /projectLink >}}
