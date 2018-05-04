@@ -29,6 +29,12 @@
         display: none;
     }
 
+    @media screen and (min-width: $break-medium) {
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
     @media screen and (max-width: $break-medium) {
         padding-top: 10px;
         padding-bottom: 10px;

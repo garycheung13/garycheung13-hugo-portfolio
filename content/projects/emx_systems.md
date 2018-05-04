@@ -9,7 +9,7 @@ card: "images/emx-card-min.png"
 headerImage: "/images/emx_macbook.png"
 toc: true
 gradient: "#6F0D27"
-weight: 1
+weight: 3
 ---
 
 {{% caseStudyHeader %}} Project Overview {{% /caseStudyHeader %}}

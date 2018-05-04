@@ -99,6 +99,15 @@
     }
 }
 
+.project-outlink {
+    font-family: $text-font-stack;
+    text-decoration: underline;
+
+    &:visited {
+        color: $vivid-blue;
+    }
+}
+
 .active {
     border-left: 3px solid $vivid-red;
     font-weight: 700;

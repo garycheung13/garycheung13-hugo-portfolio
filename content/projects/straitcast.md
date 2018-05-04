@@ -1,9 +1,9 @@
 ---
 title: "Straitcast"
 date: 2018-05-01T15:30:19-04:00
-draft: true
+draft: false
 roles: ["Frontend Dev", "Backend Dev"]
-duration: "2 Months"
+duration: "3 Months"
 tagline: "A no frills web-based podcast player built on react and powered by firebase"
 card: "/images/straitcast_card.png"
 headerImage: "/images/straitcast-macbook.png"
@@ -31,3 +31,13 @@ Straitcast is a web based podcast player that aims to provide a convenient, no-f
 {{< figure src="/images/project-images/straitcast-image2.png" title="Straitcast search result screen">}}
 
 {{< figure src="/images/project-images/straitcast-image1.png" title="Straitcast podcast channel screen">}}
+
+## Project Links
+---
+{{< projectLink src="https://straitcast.herokuapp.com" >}}
+    View Live Site
+{{< /projectLink >}}
+
+{{< projectLink src="https://github.com/garycheung13/straitcast" >}}
+    Source Code
+{{< /projectLink >}}
