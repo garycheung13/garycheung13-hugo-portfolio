@@ -51,6 +51,7 @@
         width: 100%;
         height: auto;
     }
+
     @media screen and (max-width: $break-medium) {
         h4 {
             font-size: 1.375rem;
@@ -75,6 +76,17 @@
 
     ul {
         padding-left: 50px;
+        font-family: $text-font-stack;
+    }
+
+    li > ul {
+        padding-left: 25px;
+        padding-bottom: 20px;
+    }
+
+    li > ul > li {
+        font-weight: 300;
+        padding-top: 5px;
     }
 
     li > h4 {
