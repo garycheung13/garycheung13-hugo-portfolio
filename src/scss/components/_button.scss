@@ -1,8 +1,8 @@
-button {
+.link-btn {
     padding: 10px 30px 10px 30px;
     border-radius: 25px;
     outline: none;
-    border-color: $vivid-red;
+    border: 1px solid $vivid-red;
     background-color: white;
     color: $vivid-red;
     font-family: $text-font-stack;
@@ -11,9 +11,6 @@ button {
 
     &:hover {
         background-color: $vivid-red;
-    }
-
-    &:hover > a {
         color: white;
     }
 }
