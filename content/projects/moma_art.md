@@ -4,7 +4,7 @@ date: 2017-12-29T22:16:47-05:00
 draft: false
 roles: ["Frontend Dev", "Data Visualization"]
 duration: "1 Month"
-tagline: "Visualizing the changes in the MoMA's collection through modern and contemporary art movments"
+tagline: "Visualizing the changes in the MoMA's collection through modern and contemporary art movements"
 weight: 4
 card: "images/moma_card.png"
 headerImage: "/images/moma_macbook.png"

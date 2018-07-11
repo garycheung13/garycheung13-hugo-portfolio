@@ -15,7 +15,7 @@ weight: 1
 
 ## About the project
 
-Straitcast is a web based podcast player that aims to provide a convenient, no-frills user interface for searching and finding single podcast episodes. It is powered by React in the frontend, served by a Node.js server and deployed on a heroku dyno. Firebase is used as a caching layer.
+Straitcast is a web based podcast player that aims to provide a convenient, no-frills user interface for searching and finding single podcast episodes. It is powered by React in the frontend,served by a Node.js server and deployed on a heroku dyno. Firebase is used as a caching layer.
 
 ## Tech Stack
 - Frontend
@@ -33,6 +33,9 @@ Straitcast is a web based podcast player that aims to provide a convenient, no-f
 {{< figure src="/images/project-images/straitcast-image1.png" title="Straitcast podcast channel screen">}}
 
 ## Project Links
+
+*Note that the project is hosted in a free Heroku dyno, which sleeps when there is no traffic. It occasionally take additional time load due to the dyno waking up.*
+
 ---
 {{< projectLink src="https://straitcast.herokuapp.com" >}}
     View Live Site
