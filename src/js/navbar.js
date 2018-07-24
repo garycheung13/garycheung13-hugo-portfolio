@@ -46,5 +46,5 @@
 
     // obfescates email link
     const emailElement = document.getElementById("footer-email");
-    emailElement.href = "mailto:" + atob("Z2NoZXVuZ0B1bWljaC5lZHU=");
+    emailElement.href = "mailto:" + atob("Z2FyeWNoZXUyM0BnbWFpbC5jb20=");
 })();
